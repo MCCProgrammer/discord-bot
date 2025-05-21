@@ -19,7 +19,7 @@ class Random_commands(commands.Cog):
     @app_commands.command(name="botping", description="Mostra o ping do bot.")
     async def botping(self, interaction: discord.Interaction):
         ping = round(self.bot.latency * 1000)
-        await interaction.response.send_message(f"My Ping: {ping}ms\nIf it's low, please subscribe to the premium version or donate! Thanks :)")
+        await interaction.response.send_message(f"My Ping: {ping}ms\nIf it's high, please subscribe to the premium version or donate! Thanks :)")
 
     
     # ----------------------------- /activity -----------------------------------------------
